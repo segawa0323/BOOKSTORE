@@ -1,0 +1,19 @@
+body {
+    font-family: Arial;
+    background-color: #f8f9fa;
+    color: #676363;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #1a237e;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+}
+.navbar .logo {color: #fff; font-size: 1.3rem; font-weight: bold; text-decoration: none;}
+.navbar .links {display: flex; gap: 20px;}
+.navbar .links a {color: #fff; text-decoration: none; }
+.container {max-width: 1200px; margin: 0 auto; padding: 24px;}
+.book-card {border-radius: 8px; padding: 16px; margin: 12px; background: #fff; text-decoration: none;}
+.btn-primary {background-color: #1a237e; color: #fff; padding: 8px 20px; border-radius: 4px; text-decoration: none; display: inline-block;}
