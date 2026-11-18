@@ -1,14 +1,14 @@
-from flask import Flask
+from flask import Flask, render_template
 def create_app():
     app = Flask(__name__)
    
     @app.route('/')
     def home():
-        return '<h1>📚 書籍注文システム</h1><p>ようこそ!</p>'
+        return render_template('index.html')
     
     @app.route('/books')
     def book_list():
-        return '<h1>書籍一覧</h1><p>書籍データはここに表示されます</p>'
+        return render_template('books/list.html')
    
     @app.route('/about')
     def about():

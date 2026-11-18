@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>書籍一覧</h1>
+<form class="search-form" method="get" action="{{ url_for('book_list') }}">
+    <input type="search" name="q" placeholder="書籍を検索">
+    <button type="submit" class="btn-primary">検索</button>
+</form>
+<div class="book-list">
+    <div class="book-card">
+        <h2>吾輩は猫である</h2>
+        <p>夏目漱石</p>
+    </div>
+    <div class="book-card">
+        <h2>銀河鉄道の夜</h2>
+        <p>宮沢賢治</p>
+    </div>
+    <div class="book-card">
+        <h2>坊ちゃん</h2>
+        <p>夏目漱石</p>
+    </div>
+</div>
+{% endblock %}

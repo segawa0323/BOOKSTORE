@@ -1,19 +1,115 @@
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     color: #676363;
     margin: 0;
 }
 
-.navbar {
-    background-color: #1a237e;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 24px;
+h1, h2 {
+    color: #1a237e;
+    margin-top: 0;
 }
-.navbar .logo {color: #fff; font-size: 1.3rem; font-weight: bold; text-decoration: none;}
-.navbar .links {display: flex; gap: 20px;}
-.navbar .links a {color: #fff; text-decoration: none; }
-.container {max-width: 1200px; margin: 0 auto; padding: 24px;}
-.book-card {border-radius: 8px; padding: 16px; margin: 12px; background: #fff; text-decoration: none;}
-.btn-primary {background-color: #1a237e; color: #fff; padding: 8px 20px; border-radius: 4px; text-decoration: none; display: inline-block;}
+
+.hero {
+    background-color: #1a237e;
+    color: #fff;
+    text-align: center;
+    padding: 72px 24px;
+}
+
+.hero h1,
+.hero p {
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    margin: 12px 0 28px;
+}
+
+.btn-primary {
+    background-color: #1a237e;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.hero .btn-primary {
+    background-color: #fff;
+    color: #1a237e;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.feature-card p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+body > h1 {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding: 0 24px;
+}
+
+.search-form {
+    display: flex;
+    gap: 12px;
+    max-width: 1200px;
+    margin: 20px auto 8px;
+    padding: 0 24px;
+}
+
+.search-form input[type="search"] {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 24px auto 48px;
+    padding: 0 24px;
+}
+
+.book-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.book-card p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .features,
+    .book-list {
+        grid-template-columns: 1fr;
+    }
+}
